@@ -32,20 +32,7 @@ Each class is split into:
 
 ---
 
-## 🧠 CNN Model Architecture
 
-```python
-model = Sequential([
-    Conv2D(32, (3,3), activation='relu', input_shape=(224, 224, 3)),
-    MaxPooling2D(pool_size=(2,2)),
-    Conv2D(64, (3,3), activation='relu'),
-    MaxPooling2D(pool_size=(2,2)),
-    Flatten(),
-    Dense(128, activation='relu'),
-    Dropout(0.5),
-    Dense(4, activation='softmax')  # 4 output classes
-])
-```
 
 * **Optimizer**: Adam
 * **Loss Function**: Categorical Crossentropy
@@ -64,6 +51,13 @@ Model performance is assessed using:
 * AUC (Area Under Curve)
 
 These are summarized and compared in a results table at the end of training.
+| Class          | Precision | Recall | F1-Score |
+| -------------- | --------- | ------ | -------- |
+| **Glioma**     | 0.9701    | 0.8667 | 0.9155   |
+| **Meningioma** | 0.8527    | 0.8889 | 0.8704   |
+| **Notumor**    | 0.9388    | 0.9852 | 0.9614   |
+| **Pituitary**  | 0.9766    | 0.9733 | 0.9750   |
+
 
 ---
 
@@ -85,19 +79,23 @@ plt.title("Grad-CAM Heatmap")
 This helps in understanding **why** the model predicted a certain tumor type by highlighting important regions in the MRI image.
 
 ---
+📸 Visual Results
+📈 Model Accuracy and Loss Over Epochs
 
-## 📁 Folder Structure
+ - ![Model Accuracy and Loss Over Epochs](static/- ![Model Accuracy and Loss Over Epochs](static/home_page.png))
 
-```
-├── brain_tumor_cnn_gradcam.ipynb
-├── README.md
-├── gradcam_outputs/
-│   └── heatmap_examples/
-└── models/
-    └── cnn_model.h5
-```
+🔍 Grad-CAM Visualization – Notumor Class
 
----
+
+- ![ Grad-CAM](static/Grad-CAM.png)
+
+
+🧪 Prediction Results on Test Samples
+- ![ Prediction Results](static/ Prediction Results.png)
+
+📊 Classification Report Summary
+
+
 
 ## ✅ Conclusion
 
