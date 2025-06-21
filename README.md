@@ -75,8 +75,9 @@ This helps in understanding **why** the model predicted a certain tumor type by 
 
 
 
-🧪 Prediction Results on Test Samples
- ![Prediction_Results](../static/Prediction_Results.png)
+### 🧪 Prediction Results on Test Samples
+- ![Prediction_Results](static/Prediction.png)
+
 
 
 📊 Classification Report Summary
