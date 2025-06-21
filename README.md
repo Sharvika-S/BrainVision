@@ -67,9 +67,10 @@ This helps in understanding **why** the model predicted a certain tumor type by 
 
 ---
 📸 Visual Results
+
 📈 Model Accuracy and Loss Over Epochs
 
- - ![Model Accuracy and Loss Over Epochs](static/home_page.png)
+ - ![Model Accuracy and Loss Over Epochs](static/Model.png)
 
 
 
