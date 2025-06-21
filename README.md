@@ -50,13 +50,6 @@ Model performance is assessed using:
 * F1 Score
 * AUC (Area Under Curve)
 
-These are summarized and compared in a results table at the end of training.
-| Class          | Precision | Recall | F1-Score |
-| -------------- | --------- | ------ | -------- |
-| **Glioma**     | 0.9701    | 0.8667 | 0.9155   |
-| **Meningioma** | 0.8527    | 0.8889 | 0.8704   |
-| **Notumor**    | 0.9388    | 0.9852 | 0.9614   |
-| **Pituitary**  | 0.9766    | 0.9733 | 0.9750   |
 
 
 ---
@@ -65,16 +58,10 @@ These are summarized and compared in a results table at the end of training.
 
 Grad-CAM is used to visualize which parts of the input image influenced the CNN's classification decision.
 
-### Example Output:
+🔍 Grad-CAM Visualization – Notumor Class
 
-```python
-# Heatmap for interpretability
-heatmap = make_gradcam_heatmap(img_array, model, last_conv_layer_name="conv2d_1")
 
-# Display the Grad-CAM heatmap
-plt.matshow(heatmap)
-plt.title("Grad-CAM Heatmap")
-```
+- ![ Grad-CAM](static/Grad-CAM.png)
 
 This helps in understanding **why** the model predicted a certain tumor type by highlighting important regions in the MRI image.
 
@@ -82,18 +69,21 @@ This helps in understanding **why** the model predicted a certain tumor type by 
 📸 Visual Results
 📈 Model Accuracy and Loss Over Epochs
 
- - ![Model Accuracy and Loss Over Epochs](static/- ![Model Accuracy and Loss Over Epochs](static/home_page.png))
-
-🔍 Grad-CAM Visualization – Notumor Class
+ - ![Model Accuracy and Loss Over Epochs](static/home_page.png)
 
 
-- ![ Grad-CAM](static/Grad-CAM.png)
 
 
 🧪 Prediction Results on Test Samples
 - ![ Prediction Results](static/ Prediction Results.png)
 
 📊 Classification Report Summary
+| Class      | Precision | Recall | F1-Score |
+|------------|-----------|--------|----------|
+| Glioma     | 0.9701    | 0.8667 | 0.9155   |
+| Meningioma | 0.8527    | 0.8889 | 0.8704   |
+| Notumor    | 0.9388    | 0.9852 | 0.9614   |
+| Pituitary  | 0.9766    | 0.9733 | 0.9750   |
 
 
 
