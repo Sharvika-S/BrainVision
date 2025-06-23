@@ -81,12 +81,15 @@ This helps in understanding **why** the model predicted a certain tumor type by 
 
 
 📊 Classification Report Summary
-| Class      | Precision | Recall | F1-Score |
-|------------|-----------|--------|----------|
-| Glioma     | 0.9701    | 0.8667 | 0.9155   |
-| Meningioma | 0.8527    | 0.8889 | 0.8704   |
-| Notumor    | 0.9388    | 0.9852 | 0.9614   |
-| Pituitary  | 0.9766    | 0.9733 | 0.9750   |
+
+
+| Class       | Precision | Recall  | F1-Score |
+|-------------|-----------|---------|----------|
+| Glioma      | 0.9860    | 0.9367  | 0.9607   |
+| Meningioma  | 0.9387    | 0.9510  | 0.9448   |
+| No Tumor    | 0.9854    | 0.9975  | 0.9914   |
+| Pituitary   | 0.9739    | 0.9933  | 0.9835   |
+
 
 
 
